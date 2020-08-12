@@ -61,12 +61,9 @@ export default {};
 </script>
 
 <style>
-
-
 html {
   scroll-behavior: smooth;
 }
-
 
 #text_menu {
   color: #161616;

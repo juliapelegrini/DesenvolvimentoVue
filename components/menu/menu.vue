@@ -1,59 +1,40 @@
 <template>
+  <b-navbar class="fixed-top menu" toggleable="lg" type="light" variant="light">
+    <b-container>
+      <b-navbar-brand href="#sectionvenda">
+        <img
+          class=""
+          src="../../assets/Logo.png"
+          alt="Logotipo WD House"
+        />
+      </b-navbar-brand>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#sectionvenda">
-      <img src="../../assets/Logo.png" alt="Logotipo WD House" width="120px"
-    /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#sectionvenda" id="text_menu"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#func" id="text_menu">Funcionalidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#quem" id="text_menu">Para quem?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section5" id="text_menu">Diferencial</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#planos" id="text_menu">Planos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contato" id="text_menu">Contato</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="img_menu">
+      <b-navbar-toggle target="nav-collapse" class="mr-4"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="#sectionvenda" id="text_menu">Home</b-nav-item>
+          <b-nav-item href="#func" id="text_menu">Funcionalidades</b-nav-item>
+          <b-nav-item href="#quem" id="text_menu">Para quem?</b-nav-item>
+          <b-nav-item href="#section5" id="text_menu">Diferencial</b-nav-item>
+          <b-nav-item href="#planos" id="text_menu">Planos</b-nav-item>
+          <b-nav-item href="#contato" id="text_menu">Contato</b-nav-item>
+          <b-nav-item href="#" id="img_menu">
             <img
               src="../../assets/facebook-square (2).svg"
               alt="Link para o Facebook"
-          /></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="img_menu"
-            ><img
+            />
+          </b-nav-item>
+          <b-nav-item href="#" id="img_menu">
+            <img
               src="../../assets/instagram (1).svg"
               alt="Link para o Instagram"
-          /></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+            />
+          </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-container>
+  </b-navbar>
 </template>
 
 <script>
@@ -77,7 +58,7 @@ html {
   color: #006837;
 }
 
-.bloco_h {
-  background-color: #ffffff;
+.nav-item {
+  padding-left: 25px;
 }
 </style>

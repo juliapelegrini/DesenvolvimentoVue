@@ -3,7 +3,7 @@
   <div class="section1" id="sectionvenda">
     <div class="container">
       <div class="row col-xl-12">
-        <div class="col-xl-6 col-12">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <p class="texto1_s1">n&atilde;o pare o seu neg&oacute;cio</p>
           <p class="texto2_s1">
             VENDA 24H <br />
@@ -16,9 +16,9 @@
           </p>
           <button class="botao1">VEJA NOSSOS PLANOS</button>
         </div>
-        <div class="col-xl-1"></div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
         <!--form-->
-        <div class="formulario col-xl-4">
+        <div class="formulario col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
           <form action="/action_page.php ">
             <h1 class="titform">
               Teste por 30 dias gr&aacute;tis, <br />
@@ -68,9 +68,10 @@ export default {};
 
 <style>
 .section1 {
-  margin-top: 35px;
+  margin-top: 90px;
   background-image: linear-gradient(to right, #acbc36, #2aa584);
   padding-bottom: 6%;
+  width: 100%;
 }
 
 .texto1_s1 {
@@ -79,6 +80,7 @@ export default {};
   font-size: 18px;
   text-transform: uppercase;
   font-family: "Roboto-Medium";
+  margin-left: 10px;
 }
 
 .texto2_s1 {
@@ -87,12 +89,14 @@ export default {};
   text-transform: uppercase;
   font-family: "Roboto-Black";
   margin-top: -15px;
+  margin-left: 10px;
 }
 
 .texto3_s1 {
   color: #fefefe;
   font-size: 16px;
   font-family: "Raleway-Regular";
+  margin-left: 10px;
 }
 
 .botao1 {

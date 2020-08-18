@@ -18,7 +18,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="car col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
               <img class="img_card" src="../../assets/clothes.png" alt="roupas" />
               <div class="box_s4">
                 <p class="tit2_s4">Lojistas</p>
@@ -29,7 +29,7 @@
               </div>
             </div>
 
-            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="car col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
               <img class="img_card" src="../../assets/homem.png" alt="roupas" />
               <div class="box_s4">
                 <p class="tit2_s4">Representantes</p>
@@ -39,7 +39,7 @@
               </div>
             </div>
 
-            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="car col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
               <img class="img_card" src="../../assets/mulher.png" alt="roupas" />
               <div class="box_s4">
                 <p class="tit2_s4">Aut&ocirc;nomos</p>
@@ -56,8 +56,7 @@
 
 <script>
 export default {
-    
-}
+  };
 </script>
 
 <style>
@@ -100,6 +99,7 @@ export default {
   position: RELATIVE;
   text-align: center;
   height: 280px;
+  
 }
 
 .img_card {
@@ -123,4 +123,6 @@ export default {
   opacity: 80%;
   font-family: "OpenSans";
 }
+
+
 </style>

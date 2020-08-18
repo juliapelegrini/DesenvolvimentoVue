@@ -13,25 +13,25 @@
           <div class="row">
             <div class="col-10 offset-2">
               <div class="row">
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                   <img src="../../assets/icon.svg" alt="" />
                   <p class="subtit_s3 mt-4">Google</p>
                   <p class="p_s3">
-                    Analise e an&uacute;ncie nas poderosas <br />
-                    ferramentas Google Analytics, Google <br />
+                    Analise e an&uacute;ncie nas poderosas 
+                    ferramentas Google Analytics, Google 
                     Shopping e Google Ads
                   </p>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                   <img src="../../assets/icon(1).svg" alt="" />
                   <p class="subtit_s3 mt-4">Facebook</p>
                   <p class="p_s3">
-                    Utilize o pixel do Facebook na sua loja <br />
+                    Utilize o pixel do Facebook na sua loja 
                     virtual para fazer an&uacute;nios assertivos e de
                     remarketing
                   </p>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                   <img src="../../assets/icon(2).svg" alt="" />
                   <p class="subtit_s3 mt-4">Instagram</p>
                   <p class="p_s3">
@@ -70,7 +70,7 @@ export default {};
   font-family: "OpenSans";
   text-align: center;
   opacity: 0.6;
-  font-size: 16px;
+  font-size: 14px;
   padding-bottom: 5%;
 }
 
@@ -78,7 +78,7 @@ export default {};
   color: #161616;
   font-size: large;
   font-family: "Raleway-Medium";
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .p_s3 {

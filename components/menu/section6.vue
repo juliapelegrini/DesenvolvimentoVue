@@ -92,9 +92,9 @@ export default {};
   bottom: 0;
   background: transparent;
 
-  -webkit-box-shadow: 0px 5px 5px 0px #504f4f;
-  -moz-box-shadow: 0px 5px 5px 0px #504f4f;
-  box-shadow: 0px 5px 5px 0px #504f4f;
+  -webkit-box-shadow: 0px 5px 5px 0px #a09f9f;
+  -moz-box-shadow: 0px 5px 5px 0px #a09f9f;
+  box-shadow: 0px 5px 5px 0px #a09f9f;
 }
 .text_s6 {
   color: #727272;

@@ -2,15 +2,15 @@
   <div class="section5" id="section5">
     <div class="container col-xl-12">
       <div class="row">
-        <div class="col-lg-1"></div>
+        <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0"></div>
         <img
-          class="img_s5 col-lg-6 col-12"
+          class="img_s5 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"
           src="../../assets/mockup.png"
           alt="computador e celular com o site da WDSHOP"
         />
-        <div class="col-xl-5">
+        <div class="col-xl-4 col-lg-4 col=md-4 col-sm-4 col-12">
           <p class="tit_s5">
-            Sua loja virtual em <br />
+            Sua loja virtual em 
             at&eacute; 7 dias
           </p>
           <p class="text_s5">
@@ -50,5 +50,14 @@ export default {};
   font-family: "OpenSans";
   color: #161616;
   opacity: 60%;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px){
+  .text_s5 {
+  padding-top: 0px;
+  font-size: 12px;
+}
+
 }
 </style>

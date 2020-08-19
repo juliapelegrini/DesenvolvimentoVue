@@ -1,62 +1,61 @@
 <template>
-     <div class="section4 col-12" id="quem">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 col-12">
-              <h1 class="tit_s4 mt-5 mb-2 col-12">
-                Para quem &eacute; o WD Shop
-              </h1>
-              <p class="text_s4 col-12">
-                Principalmente para quem n&atilde;o tem conhecimento ou tempo para
-                perder em aprender a customizar sua loja, ler <br />
-                tutoriais, testar, quebrar a cabeça com algo que n&atilde;o domina.
-                Voc&ecirc; deve usar este tempo para focar no seu <br />
-                neg&oacute;cio, a parte t&eacute;cnica, deixa para n&oacute;s.
-              </p>
-            </div>
+  <div class="section4 col-12" id="quem">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-12">
+          <h1 class="tit_s4 mt-5 mb-2 col-12">
+            Para quem &eacute; o WD Shop
+          </h1>
+          <p class="text_s4 col-12">
+            Principalmente para quem n&atilde;o tem conhecimento ou tempo para
+            perder em aprender a customizar sua loja, ler <br />
+            tutoriais, testar, quebrar a cabeça com algo que n&atilde;o domina.
+            Voc&ecirc; deve usar este tempo para focar no seu <br />
+            neg&oacute;cio, a parte t&eacute;cnica, deixa para n&oacute;s.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="car col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+          <img class="img_card" src="../../assets/clothes.png" alt="roupas" />
+          <div class="box_s4">
+            <p class="tit2_s4">Lojistas</p>
+            <p class="text2_s4">
+              Tem loja f&iacute;sica e quer vender online podendo integrar com
+              seu sistema
+            </p>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="car col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-              <img class="img_card" src="../../assets/clothes.png" alt="roupas" />
-              <div class="box_s4">
-                <p class="tit2_s4">Lojistas</p>
-                <p class="text2_s4">
-                  Tem loja f&iacute;sica e quer vender online podendo integrar com seu
-                  sistema
-                </p>
-              </div>
-            </div>
 
-            <div class="car col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-              <img class="img_card" src="../../assets/homem.png" alt="roupas" />
-              <div class="box_s4">
-                <p class="tit2_s4">Representantes</p>
-                <p class="text2_s4">
-                  Precisa agilizar seu atendimento aos lojistas com venda B2B
-                </p>
-              </div>
-            </div>
+        <div class="car col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+          <img class="img_card" src="../../assets/homem.png" alt="roupas" />
+          <div class="box_s4">
+            <p class="tit2_s4">Representantes</p>
+            <p class="text2_s4">
+              Precisa agilizar seu atendimento aos lojistas com venda B2B
+            </p>
+          </div>
+        </div>
 
-            <div class="car col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-              <img class="img_card" src="../../assets/mulher.png" alt="roupas" />
-              <div class="box_s4">
-                <p class="tit2_s4">Aut&ocirc;nomos</p>
-                <p class="text2_s4">
-                  Vende pelas redes sociais e quer se profissionalizar escalando
-                  suas vendas
-                </p>
-              </div>
-            </div>
+        <div class="car col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+          <img class="img_card" src="../../assets/mulher.png" alt="roupas" />
+          <div class="box_s4">
+            <p class="tit2_s4">Aut&ocirc;nomos</p>
+            <p class="text2_s4">
+              Vende pelas redes sociais e quer se profissionalizar escalando
+              suas vendas
+            </p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
-  };
+export default {};
 </script>
 
 <style>
@@ -99,7 +98,6 @@ export default {
   position: RELATIVE;
   text-align: center;
   height: 280px;
-  
 }
 
 .img_card {
@@ -119,10 +117,34 @@ export default {
 }
 
 .text2_s4 {
-  font-size: 14px;
+  font-size: 16px;
   opacity: 80%;
   font-family: "OpenSans";
 }
 
+@media screen and (max-width: 800px) {
+  .car{
+    width: 100px;
+  }
+  .img_card {
+    margin-top: 40px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+  }
+  .tit2_s4 {
+  font-size: 18px;
+  align-content: center;
 
+  }
+  .text2_s4 {
+  font-size: 13px;}
+}
+.box_s4 {
+  padding-right: 55px;
+  padding-left: 55px;
+}
 </style>

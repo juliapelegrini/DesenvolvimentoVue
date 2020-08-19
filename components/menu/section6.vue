@@ -10,8 +10,8 @@
     </p>
     <div class="col-xl-12">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-4">
+        <div class="row mobileOff">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
             <div class="cards_s6 col-xl-12">
               <p class="text_s6">
                 Lorem ipsum dolor sit amet, <br />
@@ -140,5 +140,10 @@ export default {};
 
 .row_s6 {
   padding-bottom: 100px;
+}
+@media screen and (max-width:375px){
+  .mobileOff{
+    display: none;
+  }
 }
 </style>

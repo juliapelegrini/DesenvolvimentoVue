@@ -3,14 +3,14 @@
     <div class="tit_s7">Nossos planos</div>
     <div class="text1_s7 col-xl-12">
       Todos os planos cont&eacute;m checkout transparente via Cielo, Redecard,
-      Mercado Pago, Stone ou Itaú Shopline. Entrega local, <br />
+      Mercado Pago, Stone ou Itaú Shopline. Entrega local, 
       Correios (PAC ou Sedex e Melhor envio (correios e transportadoras).
       Certificado de segurança SSL e suporte humanizado.
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-xl-2"></div>
-        <div class="card1 col-xl-3 col-12">
+        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-12 col-12"></div>
+        <div class="card1 col-xl-3 col-lg-3 col-md-4 col-sm-11 col-11">
           <div class="cabecalho1_s7">100 produtos</div>
           <div>
             <div class="row col-xl-12">
@@ -32,7 +32,7 @@
             </button>
           </div>
         </div>
-        <div class="card2 col-xl-3 col-12">
+        <div class="card2 col-xl-3 col-lg-3 col-md-4 col-sm-11 col-11">
           <div class="cabecalho2_s7">300 produtos</div>
           <div>
             <div class="row col-xl-12">
@@ -55,7 +55,7 @@
             </button>
           </div>
         </div>
-        <div class="card3 col-xl-3">
+        <div class="card3 col-xl-3 col-lg-3 col-md-4 col-sm-11 col-11">
           <div class="cabecalho1_s7">produtos ilimitados</div>
           <div>
             <div class="row col-xl-12">
@@ -275,5 +275,46 @@ export default {};
   height: 550px;
   padding-right: 10px;
   margin-bottom: 90px;
+}
+
+@media screen and (max-width: 425px) {
+  .card1 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 40px;
+  height: 590px;
+  margin-left: 13px;
+  }
+
+.card2{
+    border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 40px;
+  height: 630px;
+  margin-left: 13px;
+}
+
+.card3{
+    border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  padding-bottom: 40px;
+  height: 600px;
+  margin-left: 13px;
+}
+}
+@media screen and (min-width: 425px){
+  .card1 {
+  height: 650px;
+  }
+  .card2{
+    height: 700px;
+  }
+  .card3{
+      height: 650px;
+  }
 }
 </style>

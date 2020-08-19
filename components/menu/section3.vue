@@ -11,7 +11,7 @@
             flexibilidade e aumente sua chances de convers&atilde;o
           </p>
           <div class="row">
-            <div class="col-10 offset-2">
+            <div class=" offset-2">
               <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                   <img src="../../assets/icon.svg" alt="" />
@@ -57,6 +57,7 @@ export default {};
 .section3 {
   margin-top: 5px;
   padding-bottom: 8%;
+  margin-left: -100px;
 }
 .tit_s3 {
   font-size: 40px;
@@ -88,4 +89,9 @@ export default {};
   font-size: 14px;
 }
 
+@media screen and (max-width: 800px) {
+  .section3 {
+  margin-left: 0px;
+}
+}
 </style>

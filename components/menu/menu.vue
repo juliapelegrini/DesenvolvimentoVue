@@ -1,15 +1,14 @@
 <template>
+<div>
   <b-navbar class="fixed-top menu" toggleable="lg" type="light" variant="light">
     <b-container>
       <b-navbar-brand href="#sectionvenda">
         <img
-          class=""
           src="../../assets/Logo.png"
-          alt="Logotipo WD House"
-        />
+          class="img-fluid">
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse" class="mr-4"></b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse" ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
@@ -35,6 +34,7 @@
       </b-collapse>
     </b-container>
   </b-navbar>
+  </div>
 </template>
 
 <script>
@@ -60,5 +60,11 @@ html {
 
 .nav-item {
   padding-left: 25px;
+}
+
+@media screen and (max-width: 465px) {
+  .nav-item{
+    padding-left:0px;
+  }
 }
 </style>

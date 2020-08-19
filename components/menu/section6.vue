@@ -2,10 +2,10 @@
   <div class="section6">
     <p class="tit_s6 col-xl-12">Confiam na WD House</p>
     <p class="subtit_s6 col-xl-12">
-      S&atilde;o mais de 450 projetos entregues ao longo dos 14 anos.
-      Possu&iacute;mos mais de 280 contratos ativos e j&aacute; s&atilde;o + de
+      São mais de 450 projetos entregues ao longo dos 14 anos.
+      Possuímos mais de 280 contratos ativos e já são + de
       20 lojas <br />
-      entregues nas &uacute;ltimas semanas, uma m&eacute;dia de 1 loja virtual
+      entregues nas últimas semanas, uma mídia de 1 loja virtual
       por dia.
     </p>
     <div class="col-xl-12">

@@ -5,16 +5,16 @@
         <img class="col-xl-6" src="../../assets/gabriela.png" alt="" />
         <div class="col-xl-6">
           <p class="tit_s9">&lt;somos digitais/&gt;</p>
-          <p class="text1_s9">Experi&ecirc;ncia web</p>
+          <p class="text1_s9">Experiência web</p>
           <p class="text2_s9">+ de 450 sites, apps e sistemas em 14 anos</p>
           <p class="text1_s9">Atendemos todo o Brasil</p>
           <p class="text2_s9">
-            Possu&iacute;mos clientes em +10 estados brasileiros do MEI ao de
+            Possuímos clientes em +10 estados brasileiros do MEI ao de
             grande porte
           </p>
           <p class="text1_s9">Geramos valor</p>
           <p class="text2_s9">
-            Promovemos a inser&ccedil;&atilde;o digital atrav&eacute;s de nossas
+            Promovemos a inserção digital através de nossas
             redes sociais, eventos e cursos.
           </p>
         </div>

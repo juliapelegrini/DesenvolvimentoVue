@@ -2,7 +2,7 @@
   <div class="section7" id="planos">
     <div class="tit_s7">Nossos planos</div>
     <div class="text1_s7 col-xl-12">
-      Todos os planos cont&eacute;m checkout transparente via Cielo, Redecard,
+      Todos os planos contém checkout transparente via Cielo, Redecard,
       Mercado Pago, Stone ou Itaú Shopline. Entrega local, 
       Correios (PAC ou Sedex e Melhor envio (correios e transportadoras).
       Certificado de segurança SSL e suporte humanizado.
@@ -17,18 +17,18 @@
               <div class="rs col-xl-1">R$</div>
               <div class="dinheiro col-xl-10">49,90</div>
             </div>
-            <div class="mes">por m&ecirc;s</div>
+            <div class="mes">por mês</div>
           </div>
           <div class="text2_s7">
-            Hospedagem com visitas e usu&aacute;rios ilimitadas
+            Hospedagem com visitas e usuários ilimitadas
           </div>
-          <div class="text3_s7">Sem taxas por venda conclu&iacute;da</div>
-          <div class="text2_s7">Sem taxa de ades&atilde;o</div>
+          <div class="text3_s7">Sem taxas por venda concluída</div>
+          <div class="text2_s7">Sem taxa de adesão</div>
           <div class="text3_s7">Treinamento individual da plataforma</div>
           <div class="text4_s7">1h de consultoria de marketing digital</div>
           <div>
             <button class="botao1_s7" onclick="location.href = '#sectionvenda'">
-              Testar 30 dias gr&aacute;tis
+              Testar 30 dias grátis
             </button>
           </div>
         </div>
@@ -39,19 +39,19 @@
               <div class="rs col-xl-1">R$</div>
               <div class="dinheiro col-xl-10">99,90</div>
             </div>
-            <div class="mes">por m&ecirc;s</div>
+            <div class="mes">por mês</div>
           </div>
           <div class="text2_s7">
-            Hospedagem com visitas e usu&aacute;rios ilimitadas
+            Hospedagem com visitas e usuários ilimitadas
           </div>
-          <div class="text3_s7">Sem taxas por venda conclu&iacute;da</div>
-          <div class="text2_s7">Sem taxa de ades&atilde;o</div>
+          <div class="text3_s7">Sem taxas por venda concluída</div>
+          <div class="text2_s7">Sem taxa de adesão</div>
           <div class="text3_s7">Treinamento individual da plataforma</div>
           <div class="text4_s7">1h de consultoria de marketing digital</div>
           <div class="text3_s7">Busca com elastic search</div>
           <div>
             <button class="botao2_s7" onclick="location.href = '#sectionvenda'">
-              Testar 30 dias gr&aacute;tis
+              Testar 30 dias grátis
             </button>
           </div>
         </div>
@@ -62,20 +62,20 @@
               <div class="rs col-xl-1">R$</div>
               <div class="dinheiro col-xl-10">179,90</div>
             </div>
-            <div class="mes">por m&ecirc;s</div>
+            <div class="mes">por mês</div>
           </div>
           <div class="text2_s7">
-            Hospedagem com visitas e usu&aacute;rios ilimitadas
+            Hospedagem com visitas e usuários ilimitadas
           </div>
-          <div class="text3_s7">Sem taxas por venda conclu&iacute;da</div>
-          <div class="text2_s7">Sem taxa de ades&atilde;o</div>
+          <div class="text3_s7">Sem taxas por venda concluída</div>
+          <div class="text2_s7">Sem taxa de adesão</div>
           <div class="text3_s7">Treinamento individual da plataforma</div>
           <div class="text4_s7">1h de consultoria de marketing digital</div>
           <div class="text3_s7">Busca com elastic search</div>
           <div class="text2_s7">Filtros e 1 e-mail corporativo</div>
           <div>
             <button class="botao3_s7" onclick="location.href = '#sectionvenda'">
-              Testar 30 dias gr&aacute;tis
+              Testar 30 dias grátis
             </button>
           </div>
         </div>

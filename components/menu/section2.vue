@@ -21,7 +21,7 @@
                 </p>
                 <p class="subtit_s2 col-12">
                   Personalizamos o layout de acordo com sua identidade visual,
-                  acess&iacute;vel pelo computador ou celular
+                  acessível pelo computador ou celular
                 </p>
               </div>
 
@@ -35,7 +35,7 @@
                 </p>
                 <p class="subtit_s2 col-12">
                   Checkout transparente via Cielo, Redecard, Mercado Pago, Stone
-                  ou Ita&uacute; Shopline
+                  ou Itaú Shopline
                 </p>
               </div>
             </div>
@@ -48,10 +48,10 @@
 
               <div class="col-xl-4 col-lg-4 col-md-8 col-sm-4 col-12">
                 <p class="tit_s2 col-xl-12 col-12">
-                  Seguran&#231;a e desempenho
+                  Segurança e desempenho
                 </p>
                 <p class="subtit_s2 col-12">
-                  Certificado SSL com prote&#231;&atilde;o de dados e hospedados
+                  Certificado SSL com proteção de dados e hospedados
                   em servidores nacionais garantindo que esteja sempre online
                 </p>
               </div>

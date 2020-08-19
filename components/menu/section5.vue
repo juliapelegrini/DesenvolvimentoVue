@@ -11,14 +11,14 @@
         <div class="col-xl-4 col-lg-4 col=md-4 col-sm-4 col-12">
           <p class="tit_s5">
             Sua loja virtual em 
-            at&eacute; 7 dias
+            até 7 dias
           </p>
           <p class="text_s5">
-            Somos diferentes de qualquer plataforma, aqui voc&ecirc; n&atilde;o
-            est&aacute; sozinho, nosso atendimento &eacute; individual e
-            humanizado. Ajudamos voc&ecirc; em todo o processo de
-            cria&ccedil;&atilde;o de sua loja, voc&ecirc; n&atilde;o precisa de
-            conhecimento para personalizar, n&oacute;s fazemos para voc&ecirc;.
+            Somos diferentes de qualquer plataforma, aqui você não
+            está sozinho, nosso atendimento é individual e
+            humanizado. Ajudamos você em todo o processo de
+            criação de sua loja, você não precisa de
+            conhecimento para personalizar, nós fazemos para você.
           </p>
         </div>
       </div>

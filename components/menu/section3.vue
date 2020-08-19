@@ -7,8 +7,8 @@
             Social Ads
           </h1>
           <p class="text_s3">
-            Integre seu site com as m&iacute;dias sociais para ter mais
-            flexibilidade e aumente sua chances de convers&atilde;o
+            Integre seu site com as mídias sociais para ter mais
+            flexibilidade e aumente sua chances de conversão
           </p>
           <div class="row">
             <div class=" offset-2">
@@ -17,7 +17,7 @@
                   <img src="../../assets/icon.svg" alt="" />
                   <p class="subtit_s3 mt-4">Google</p>
                   <p class="p_s3">
-                    Analise e an&uacute;ncie nas poderosas 
+                    Analise e anúncie nas poderosas 
                     ferramentas Google Analytics, Google 
                     Shopping e Google Ads
                   </p>
@@ -27,7 +27,7 @@
                   <p class="subtit_s3 mt-4">Facebook</p>
                   <p class="p_s3">
                     Utilize o pixel do Facebook na sua loja 
-                    virtual para fazer an&uacute;nios assertivos e de
+                    virtual para fazer anúncios assertivos e de
                     remarketing
                   </p>
                 </div>
@@ -36,7 +36,7 @@
                   <p class="subtit_s3 mt-4">Instagram</p>
                   <p class="p_s3">
                     Integramos seus produtos da loja com a sacolinha do
-                    Instagram para aumentar sua convers&atilde;o dentro da rede
+                    Instagram para aumentar sua conversão dentro da rede
                     social
                   </p>
                 </div>

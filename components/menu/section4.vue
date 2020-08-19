@@ -4,14 +4,14 @@
       <div class="row">
         <div class="col-xl-12 col-12">
           <h1 class="tit_s4 mt-5 mb-2 col-12">
-            Para quem &eacute; o WD Shop
+            Para quem é o WD Shop
           </h1>
           <p class="text_s4 col-12">
-            Principalmente para quem n&atilde;o tem conhecimento ou tempo para
+            Principalmente para quem não tem conhecimento ou tempo para
             perder em aprender a customizar sua loja, ler <br />
-            tutoriais, testar, quebrar a cabeça com algo que n&atilde;o domina.
-            Voc&ecirc; deve usar este tempo para focar no seu <br />
-            neg&oacute;cio, a parte t&eacute;cnica, deixa para n&oacute;s.
+            tutoriais, testar, quebrar a cabeça com algo que não domina.
+            Você deve usar este tempo para focar no seu <br />
+            negócio, a parte técnica, deixa para nós.
           </p>
         </div>
       </div>
@@ -23,7 +23,7 @@
           <div class="box_s4">
             <p class="tit2_s4">Lojistas</p>
             <p class="text2_s4">
-              Tem loja f&iacute;sica e quer vender online podendo integrar com
+              Tem loja física e quer vender online podendo integrar com
               seu sistema
             </p>
           </div>
@@ -42,7 +42,7 @@
         <div class="car col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
           <img class="img_card" src="../../assets/mulher.png" alt="roupas" />
           <div class="box_s4">
-            <p class="tit2_s4">Aut&ocirc;nomos</p>
+            <p class="tit2_s4">Autônomos</p>
             <p class="text2_s4">
               Vende pelas redes sociais e quer se profissionalizar escalando
               suas vendas

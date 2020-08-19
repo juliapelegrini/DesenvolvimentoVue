@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row col-xl-12">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <p class="texto1_s1">n&atilde;o pare o seu neg&oacute;cio</p>
+          <p class="texto1_s1">não pare o seu negócio</p>
           <p class="texto2_s1">
             VENDA 24H <br />
             COM SUA <br />
@@ -21,7 +21,7 @@
         <div class="formulario col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
           <form action="/action_page.php ">
             <h1 class="titform">
-              Teste por 30 dias gr&aacute;tis, <br />
+              Teste por 30 dias grátis, <br />
               solicite um atendimento.
             </h1>
             <label for="1"></label><br />

@@ -1,10 +1,10 @@
 <template>
   <div class="section8">
-    <div class="tit_s8">Contrate tamb&eacute;m (opcional)</div>
+    <div class="tit_s8">Contrate também (opcional)</div>
     <div class="text1_s8">
-      Aproveite outros servi&ccedil;os para obter mais desempenho em sua loja
-      virtual. Estes são servi&ccedil;os opcionais e também possuem 30 <br />
-      dias gr&aacute;tis com exce&ccedil;&atilde;o da integra&ccedil;&atilde;o
+      Aproveite outros serviços para obter mais desempenho em sua loja
+      virtual. Estes são serviços opcionais e também possuem 30 <br />
+      dias grátis com exceção da integração
       com sistemas de terceiros.
     </div>
     <div class="container">
@@ -12,9 +12,9 @@
         <div class="col-xl-1"></div>
         <div class="col-xl-3">
           <img class="img_s8" src="../../assets/dominio.svg" alt="dominio" />
-          <p class="text2_s8">Registro de dom&iacute;nio</p>
+          <p class="text2_s8">Registro de domínio</p>
           <p class="text3_s8">
-            Seu dom&iacute;nio www.sualoja.com.br <br />
+            Seu domínio www.sualoja.com.br <br />
             pago ao registro.br
           </p>
           <p class="text4_s8">R$40,00/ano</p>
@@ -24,19 +24,19 @@
           <img class="img_s8" src="../../assets/email.svg" alt="e-mail" />
           <p class="text2_s8">E-mail personalizado</p>
           <p class="text3_s8">
-            E-mail Zimbra espa&ccedil;o de 1GB pre&ccedil;o por conta de e-mail
+            E-mail Zimbra espaço de 1GB preço por conta de e-mail
           </p>
-          <p class="text4_s8">R$3,90/m&ecirc;s</p>
+          <p class="text4_s8">R$3,90/mês</p>
         </div>
         <div class="col-xl-1"></div>
         <div class="col-xl-3">
           <img class="img_s8" src="../../assets/api.svg" alt="API" />
-          <p class="text2_s8">Integra&ccedil;&otilde;es de terceiros</p>
+          <p class="text2_s8">Integrações de terceiros</p>
           <p class="text3_s8">
-            Implanta&ccedil;&atilde;o R$400,00/integra&ccedil;&atilde;o
-            mensalidade por integra&ccedil;&atilde;o
+            Implantação R$400,00/integração
+            mensalidade por integração
           </p>
-          <p class="text4_s8">R$49,90/m&ecirc;s</p>
+          <p class="text4_s8">R$49,90/mês</p>
         </div>
       </div>
 
@@ -44,32 +44,32 @@
         <div class="col-xl-1"></div>
         <div class="col-xl-3">
           <img class="img_s8" src="../../assets/carrinho.svg" alt="carrinho" />
-          <p class="text2_s8">Recupera&ccedil;&atilde;o de carrinho</p>
+          <p class="text2_s8">Recuperação de carrinho</p>
           <p class="text3_s8">
-            Aumente a convers&atilde;o de suas vendas!pre&ccedil;o por lote de
+            Aumente a conversão de suas vendas!preço por lote de
             1.000 disparos
           </p>
-          <p class="text4_s8">R$9,90/m&ecirc;s</p>
+          <p class="text4_s8">R$9,90/mês</p>
         </div>
         <div class="col-xl-1"></div>
         <div class="col-xl-3">
           <img class="img_s8" src="../../assets/marketing.svg" alt="marketing" />
           <p class="text2_s8">E-mail marketing</p>
           <p class="text3_s8">
-            Dispare suas campanhas por e-mail! pre&ccedil;o por lote de 1.000
+            Dispare suas campanhas por e-mail! preço por lote de 1.000
             disparos
           </p>
-          <p class="text4_s8">R$9,90/m&ecirc;s</p>
+          <p class="text4_s8">R$9,90/mês</p>
         </div>
         <div class="col-xl-1"></div>
         <div class="col-xl-3">
           <img class="img_s8" src="../../assets/venda.svg" alt="Venda" />
           <p class="text2_s8">Ponto de Venda - PDV</p>
           <p class="text3_s8">
-            Utilize para venda na sua loja f&iacute; sica
-            configura&ccedil;&atilde;o de cupom n&atilde;o fiscal
+            Utilize para venda na sua loja física
+            configuração de cupom não fiscal
           </p>
-          <p class="text4_s8">R$150,00 &uacute;nico</p>
+          <p class="text4_s8">R$150,00 único</p>
         </div>
       </div>
     </div>

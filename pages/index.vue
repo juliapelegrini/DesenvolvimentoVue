@@ -5,11 +5,16 @@
   <Section2></Section2>
   <Section3></Section3>
   <Section4></Section4>
+
   <Section5></Section5>
   <Section6></Section6>
+    <Carrossel></Carrossel>
   <Section7></Section7>
   <Section8></Section8>
   <Section9></Section9>
+
+ 
+
   <Footer></Footer>
   
 
@@ -28,6 +33,8 @@ import section7 from '../components/menu/section7'
 import section8 from '../components/menu/section8'
 import section9 from '../components/menu/section9'
 import footer from '../components/menu/footer'
+import carrossel from '../components/menu/carrossel'
+
 
 export default {
   components: {
@@ -42,7 +49,10 @@ export default {
     "Section8": section8,
     "Section9": section9,
     "Footer":footer,
-  }
+    "Carrossel":carrossel,
+
+  },
+ 
 }
 </script>
 

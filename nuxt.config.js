@@ -1,6 +1,7 @@
 
 export default {
   mode: 'universal',
+
   /*
   ** Headers of the page
   */
@@ -11,9 +12,15 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
+    script:[
+      {src: '/js/custom.js',  type: "text/javascript", body:true},
+    ],
+
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' },
+			{ rel: 'stylesheet', type: 'text/css', href: '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' },
+    ],
   },
   /*
   ** Customize the progress-bar color
@@ -22,8 +29,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
@@ -46,11 +52,20 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
+        /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+   extend(config, ctx) {
+    const nodeExternals = require('webpack-node-externals')
+    if (ctx.isServer) {
+        config.externals = [
+          nodeExternals({
+            allowlist: [/^vue-slick/]
+          })
+        ]
+      }
     }
+
   },
   router: {
     extendRoutes (routes, resolve) {

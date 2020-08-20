@@ -58,6 +58,7 @@ export default {};
   margin-top: 5px;
   padding-bottom: 8%;
   margin-left: -100px;
+    width: 100%;
 }
 .tit_s3 {
   font-size: 40px;

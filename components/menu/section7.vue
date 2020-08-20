@@ -91,6 +91,7 @@ export default {};
 <style>
 .section7 {
   background-color: #006837;
+    width: 100%;
 }
 
 .tit_s7 {
@@ -217,6 +218,7 @@ export default {};
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 1);
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 1);
+  z-index: 3;
 }
 
 .cabecalho2_s7 {

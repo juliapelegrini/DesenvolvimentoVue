@@ -68,7 +68,7 @@ export default {};
     ),
     url("../../assets/entrega.png");
   background-color: transparent;
-
+  width: 100%;
   position: RELATIVE;
 }
 .tit_s4 {

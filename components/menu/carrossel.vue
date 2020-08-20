@@ -1,25 +1,29 @@
 <template>
-  <div class="carousel">
-    <slick :is="slickComp" ref="slick" :options="slickOptions">
-      <div
-        class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" v-for="cliente in depo">
-        <div class="cards_s6 col-xl-12">
-          <p class="text_s6">
-            {{ cliente.texto }}
-          </p>
-          <p class="text2_s6">{{ cliente.nome }}</p>
-          <p class="text3_s6">{{ cliente.empresa }}</p>
+  <div>
+    <div class="carousel ">
+      <slick class="row" :is="slickComp" ref="slick" :options="slickOptions">
+        <div
+          class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"
+          v-for="cliente in depo"
+        >
+          <div class="cards_s6 col-xl-12">
+            <p class="text_s6">
+              {{ cliente.texto }}
+            </p>
+            <p class="text2_s6">{{ cliente.nome }}</p>
+            <p class="text3_s6">{{ cliente.empresa }}</p>
+            <img class="img_s6" :src="cliente.imagem" alt="cliente 3" />
+          </div>
         </div>
-        <img class="img_s6" :src="cliente.imagem" alt="cliente 3" />
-      </div>
-    </slick>
+      </slick>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    props:["depo"],
-    components: {
+  props: ["depo"],
+  components: {
     Slick: () => import("vue-slick")
   },
   data() {
@@ -68,6 +72,4 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

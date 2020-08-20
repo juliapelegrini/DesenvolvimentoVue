@@ -1,13 +1,12 @@
 <template>
   <div class="section6">
-    <p class="tit_s6 col-xl-12">{{titulo}}</p>
-    <p class="subtit_s6 col-xl-12">
-        {{descricao}}
-    </p>
-    <div class="col-xl-12">
-      <div class="container">
-        <!--<div class="row mobileOff">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" v-for="cliente in lista">
+    <p class="tit_s6 col-xl-12">{{ titulo }}</p>
+    <div class="container">
+        <p class="subtit_s6 col-xl-12">
+          {{ descricao }}
+        </p>
+      </div>
+      <!--<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" v-for="cliente in lista">
             <div class="cards_s6 col-xl-12">
               <p class="text_s6">
                 {{cliente.texto}}
@@ -18,43 +17,45 @@
             <img class="img_s6" :src="cliente.imagem" alt="cliente 3" />
           </div>
           </div>-->
-          <carrossel :depo="lista" />
-      </div>
-    </div>
+      <carrossel :depo="lista" />
   </div>
 </template>
 
 <script>
-import carrossel from "~/components/menu/carrossel.vue"
+import carrossel from "~/components/menu/carrossel.vue";
 export default {
   components: {
     carrossel
   },
-  data: function(){
-    return{
-      titulo:"Confiam na WD House",
-      descricao:"São mais de 450 projetos entregues ao longo dos 14 anos. Possuímos mais de 280 contratos ativos e já são + de 20 lojas entregues nas últimas semanas, uma mídia de 1 loja virtual por dia.",
+  data: function() {
+    return {
+      titulo: "Confiam na WD House",
+      descricao:
+        "São mais de 450 projetos entregues ao longo dos 14 anos. Possuímos mais de 280 contratos ativos e já são + de 20 lojas entregues nas últimas semanas, uma mídia de 1 loja virtual por dia.",
       lista: [
         {
-          texto:"Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis  commodo.",
+          texto:
+            "Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis  commodo.",
           nome: "Michael Nicholas",
-          empresa:"Nome da empresa",
-          imagem:"../../assets/bg2.png",
+          empresa: "Nome da empresa",
+          imagem: "../../assets/bg2.png"
         },
         {
-          texto:"Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis commodo.",
+          texto:
+            "Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis commodo.",
           nome: "Michael Nicholas",
-          empresa:"Nome da empresa",
-          imagem:"../../assets/bg2.png",
+          empresa: "Nome da empresa",
+          imagem: "../../assets/bg2.png"
         },
         {
-          texto:"Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis commodo.",
+          texto:
+            "Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis commodo.",
           nome: "Michael Nicholas",
-          empresa:"Nome da empresa",
-          imagem:"../../assets/bg2.png",
+          empresa: "Nome da empresa",
+          imagem: "../../assets/bg2.png"
         }
       ]
-    }
+    };
   }
 };
 </script>
@@ -62,6 +63,7 @@ export default {
 <style>
 .section6 {
   background-color: #f5f5f5;
+  width: 100%;
 }
 .tit_s6 {
   font-family: "Raleway-Bold";
@@ -138,8 +140,8 @@ export default {
 .row_s6 {
   padding-bottom: 100px;
 }
-@media screen and (max-width:375px){
-  .mobileOff{
+@media screen and (max-width: 375px) {
+  .mobileOff {
     display: none;
   }
 }

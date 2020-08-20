@@ -9,8 +9,8 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-xl-1"></div>
-        <div class="col-xl-3">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
           <img class="img_s8" src="../../assets/dominio.svg" alt="dominio" />
           <p class="text2_s8">Registro de domínio</p>
           <p class="text3_s8">
@@ -19,8 +19,8 @@
           </p>
           <p class="text4_s8">R$40,00/ano</p>
         </div>
-        <div class="col-xl-1"></div>
-        <div class="col-xl-3">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
           <img class="img_s8" src="../../assets/email.svg" alt="e-mail" />
           <p class="text2_s8">E-mail personalizado</p>
           <p class="text3_s8">
@@ -28,8 +28,8 @@
           </p>
           <p class="text4_s8">R$3,90/mês</p>
         </div>
-        <div class="col-xl-1"></div>
-        <div class="col-xl-3">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
           <img class="img_s8" src="../../assets/api.svg" alt="API" />
           <p class="text2_s8">Integrações de terceiros</p>
           <p class="text3_s8">
@@ -41,8 +41,8 @@
       </div>
 
       <div class="row">
-        <div class="col-xl-1"></div>
-        <div class="col-xl-3">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
           <img class="img_s8" src="../../assets/carrinho.svg" alt="carrinho" />
           <p class="text2_s8">Recuperação de carrinho</p>
           <p class="text3_s8">
@@ -51,8 +51,8 @@
           </p>
           <p class="text4_s8">R$9,90/mês</p>
         </div>
-        <div class="col-xl-1"></div>
-        <div class="col-xl-3">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
           <img class="img_s8" src="../../assets/marketing.svg" alt="marketing" />
           <p class="text2_s8">E-mail marketing</p>
           <p class="text3_s8">
@@ -61,8 +61,8 @@
           </p>
           <p class="text4_s8">R$9,90/mês</p>
         </div>
-        <div class="col-xl-1"></div>
-        <div class="col-xl-3">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
           <img class="img_s8" src="../../assets/venda.svg" alt="Venda" />
           <p class="text2_s8">Ponto de Venda - PDV</p>
           <p class="text3_s8">
@@ -82,6 +82,10 @@ export default {};
 </script>
 
 <style>
+.section8{
+    width: 100%;
+}
+
 .tit_s8 {
   font-family: "Raleway-Bold";
   color: #006837;

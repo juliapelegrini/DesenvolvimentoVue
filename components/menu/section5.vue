@@ -34,6 +34,7 @@ export default {};
 .section5 {
   background-color: #f5f5f5;
   padding-bottom: 100px;
+    width: 100%;
 }
 .img_s5 {
   padding-top: 100px;

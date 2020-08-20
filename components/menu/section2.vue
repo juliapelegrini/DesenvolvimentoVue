@@ -8,14 +8,14 @@
 
             <div class="row itens">
 
-              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-1 col-12">
+              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
                 <img
                   src="../../assets/computer.svg"
                   alt="Imagem de um Computador e telefone"
                 />
               </div>
 
-              <div class="col-xl-4 col-lg-4 col-md-8 col-sm-4 col-12">
+              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
                 <p class="tit_s2 col-xl-12 col-12">
                   Customizada e responsiva
                 </p>
@@ -25,11 +25,11 @@
                 </p>
               </div>
 
-            <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-1 col-12">
+            <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
                 <img src="../../assets/pay.svg" alt="Cartões" />
               </div>
 
-              <div class="col-xl-4 col-lg-4 col-md-8 col-sm-4 col-12">
+              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
                 <p class="tit_s2 col-xl-12 col-12">
                   Meio de pagamento
                 </p>
@@ -42,11 +42,11 @@
 
             <div class="row itens">
 
-              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-1 col-12">
+              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
                 <img src="../../assets/ssl.svg" alt="Cadeado" />
               </div>
 
-              <div class="col-xl-4 col-lg-4 col-md-8 col-sm-4 col-12">
+              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
                 <p class="tit_s2 col-xl-12 col-12">
                   Segurança e desempenho
                 </p>
@@ -56,11 +56,11 @@
                 </p>
               </div>
 
-              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-1 col-12">
+              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
                 <img src="../../assets/delivery-truck.svg" alt="Caminhão" />
               </div>
 
-              <div class="col-xl-4 col-lg-4 col-md-8 col-sm-4 col-12">
+              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
                 <p class="tit_s2 col-xl-12 col-12">Formas de entrega</p>
                 <p class="subtit_s2 col-12">
                   Entrega local, Correios (PAC ou Sedex e Melhor envio (correios

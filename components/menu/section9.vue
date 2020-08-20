@@ -30,6 +30,7 @@ export default {};
 <style>
 .section9 {
   background-color: #f5f5f5;
+  width: 90%;
 }
 
 .tit_s9 {
@@ -38,6 +39,7 @@ export default {};
   font-size: 40px;
   margin-top: 40px;
   margin-left: 10px;
+
 }
 
 .text1_s9 {
@@ -45,6 +47,7 @@ export default {};
   font-size: 20px;
   font-family: "Raleway-Regular";
   margin-left: 10px;
+
 }
 
 .text2_s9 {
@@ -54,5 +57,6 @@ export default {};
   margin-top: -15px;
   margin-bottom: 35px;
   margin-left: 10px;
+
 }
 </style>

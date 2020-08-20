@@ -70,6 +70,7 @@ export default {
 <style>
 footer {
   background-color: #006837;
+    width: 100%;
 }
 
 .rodape {

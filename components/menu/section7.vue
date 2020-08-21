@@ -1,12 +1,16 @@
 <template>
   <div class="section7" id="planos">
-    <div class="tit_s7">Nossos planos</div>
+    <div class="container">
+      <div class="row">
+        <div class="tit_s7 col-xl-12">Nossos planos</div>
     <div class="text1_s7 col-xl-12">
-      Todos os planos contém checkout transparente via Cielo, Redecard,
-      Mercado Pago, Stone ou Itaú Shopline. Entrega local, 
-      Correios (PAC ou Sedex e Melhor envio (correios e transportadoras).
-      Certificado de segurança SSL e suporte humanizado.
+      Todos os planos contém checkout transparente via Cielo, Redecard, Mercado
+      Pago, Stone ou Itaú Shopline. Entrega local, Correios (PAC ou Sedex e
+      Melhor envio (correios e transportadoras). Certificado de segurança SSL e
+      suporte humanizado.
     </div>
+      </div>
+      </div>
     <div class="container">
       <div class="row">
         <div class="col-xl-2 col-lg-2 col-md-0 col-sm-12 col-12"></div>
@@ -91,7 +95,7 @@ export default {};
 <style>
 .section7 {
   background-color: #006837;
-    width: 100%;
+  width: 100%;
 }
 
 .tit_s7 {
@@ -108,7 +112,7 @@ export default {};
   text-align: center;
   font-size: 14px;
   padding-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .card1 {
@@ -117,7 +121,7 @@ export default {};
   border-bottom-left-radius: 10px;
   border-color: #ebebeb;
   padding-bottom: 40px;
-  height: 550px;
+  height: 600px;
   padding-right: 10px;
   margin-bottom: 40px;
 }
@@ -137,7 +141,7 @@ export default {};
   color: #2f2f2f;
   font-family: "Lato-Regular";
   font-size: 18px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .dinheiro {
@@ -145,7 +149,9 @@ export default {};
   font-family: "Lato-Regular";
   font-size: 60px;
   text-align: center;
-  padding-top: 20px;
+  margin-top: -50px;
+  margin-left: 20px;
+  padding-right: 15px;
 }
 .mes {
   color: #dcdcdc;
@@ -212,7 +218,7 @@ export default {};
   padding-left: 0px;
   padding-right: 0px;
   margin-top: -20px;
-  height: 600px;
+  height: 650px;
   margin-bottom: 20px;
   border: 1px solid #ebebeb;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 1);
@@ -274,49 +280,49 @@ export default {};
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-bottom: 40px;
-  height: 550px;
-  padding-right: 10px;
+  height: 600px;
   margin-bottom: 90px;
 }
 
 @media screen and (max-width: 425px) {
   .card1 {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding-bottom: 40px;
-  height: 590px;
-  margin-left: 13px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 40px;
+    height: 590px;
+    margin-left: 13px;
   }
 
-.card2{
+  .card2 {
     border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding-bottom: 40px;
-  height: 630px;
-  margin-left: 13px;
-}
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 40px;
+    height: 630px;
+    margin-left: 13px;
+  }
 
-.card3{
+  .card3 {
     border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-  padding-bottom: 40px;
-  height: 600px;
-  margin-left: 13px;
+    padding-bottom: 40px;
+    height: 500px;
+    margin-left: 13px;
+  }
 }
-}
-@media screen and (min-width: 425px){
+@media screen and (max-width: 425px) {
   .card1 {
-  height: 650px;
+    height: 550px;
   }
-  .card2{
-    height: 700px;
+  .card2 {
+    height: 590px;
   }
-  .card3{
-      height: 650px;
+  .card3 {
+    height: 565px;
   }
 }
+
 </style>

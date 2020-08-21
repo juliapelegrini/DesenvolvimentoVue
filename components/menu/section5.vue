@@ -61,4 +61,8 @@ export default {};
 }
 
 }
+@media screen and (max-width: 425px){
+.tit_s5 {
+  padding-top: 40px;
+}}
 </style>

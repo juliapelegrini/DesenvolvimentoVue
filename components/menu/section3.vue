@@ -95,4 +95,9 @@ export default {};
   margin-left: 0px;
 }
 }
+@media screen and (min-width: 760px) {
+.section3 {
+padding-left: 100px;
+}
+}
 </style>

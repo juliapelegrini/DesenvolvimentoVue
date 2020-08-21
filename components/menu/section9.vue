@@ -17,10 +17,12 @@
             Promovemos a inserção digital através de nossas
             redes sociais, eventos e cursos.
           </p>
+            <div class="" id="contato"> </div>
         </div>
       </div>
     </div>
   </div>
+
 </template>
 
 <script>

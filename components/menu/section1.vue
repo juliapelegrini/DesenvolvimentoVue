@@ -6,8 +6,8 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <p class="texto1_s1">não pare o seu negócio</p>
           <p class="texto2_s1">
-            VENDA 24H <br />
-            COM SUA <br />
+            VENDA 24H
+            COM SUA 
             LOJA VIRTUAL
           </p>
           <p class="texto3_s1">
@@ -150,5 +150,11 @@ export default {};
   font-family: "Roboto-Bold";
   border-width: 0px;
   margin-left: 35px;
+}
+
+@media screen and (max-width: 375px) {
+  .texto2_s1 {
+  font-size: 45px;
+  }
 }
 </style>

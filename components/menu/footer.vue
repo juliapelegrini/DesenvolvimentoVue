@@ -2,7 +2,7 @@
   <footer >
     <div class="container">
       <div class="row">
-        <div class="distanciamento col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+        <div class="distanciamento col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12m ">
           <img
             src="../../assets/Camada2(2).svg"
             alt="Logotipo WD House"

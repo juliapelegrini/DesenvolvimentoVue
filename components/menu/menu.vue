@@ -8,19 +8,20 @@
     >
       <b-container>
         <b-navbar-brand href="#sectionvenda">
-            <img src="../../assets/Logo.png" class="img-fluid" />
+          <img src="../../assets/Logo.png" class="img-fluid" />
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item href="#sectionvenda" id="text_menu">Home</b-nav-item>
+            <b-nav-item :href="item.href" v-for="item in menu" >{{item.name}}</b-nav-item>
+            <!--<b-nav-item href="#sectionvenda" id="text_menu">Home</b-nav-item>
             <b-nav-item href="#func" id="text_menu">Funcionalidades</b-nav-item>
             <b-nav-item href="#quem" id="text_menu">Para quem?</b-nav-item>
             <b-nav-item href="#section5" id="text_menu">Diferencial</b-nav-item>
             <b-nav-item href="#planos" id="text_menu">Planos</b-nav-item>
-            <b-nav-item href="#contato" id="text_menu">Contato</b-nav-item>
+            <b-nav-item href="#contato" id="text_menu">Contato</b-nav-item>-->
             <b-nav-item href="#" id="img_menu">
               <img
                 src="../../assets/facebook-square (2).svg"
@@ -41,7 +42,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      menu: []
+    }
+  },
+  async fetch() {
+    this.menu = await this.$axios.$get('https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/menu/?area=2').then((res) =>{
+      return res.data
+    });
+  }
+}
 </script>
 
 <style>
@@ -64,7 +76,7 @@ html {
 .nav-item {
   padding-left: 25px;
 }
-.nav-bar{
+.nav-bar {
   display: none;
 }
 

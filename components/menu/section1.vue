@@ -4,8 +4,12 @@
     <div class="container">
       <div class="row col-xl-12">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <p class="texto1_s1">não pare o seu negócio</p>
-          <p class="texto2_s1">
+          <p class="texto1_s1" >{{banner.name1}}</p>
+          <!--<p>não pare o seu negócio</p>-->
+          <p class="texto2_s1"> {{banner.name2}}</p>
+          <div v-html="banner.text1" class="texto3_s1"> {{banner.text1}} </div>
+          <div class="botao1"> {{banner.name4}}</div>
+          <!--<p class="texto2_s1">
             VENDA 24H
             COM SUA 
             LOJA VIRTUAL
@@ -14,7 +18,7 @@
             Mais que uma plataforma de loja virtual, uma equipe ao seu lado lhe
             ajudando a construir seu sonho.
           </p>
-          <button class="botao1">VEJA NOSSOS PLANOS</button>
+          <button class="botao1">VEJA NOSSOS PLANOS</button>-->
         </div>
         <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
         <!--form-->
@@ -63,7 +67,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      banner: []
+    }
+  },
+  async fetch() {
+    this.banner = await this.$axios.$get('https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms?page_id=7').then((res) =>{
+      return res.data
+    });
+  }
+};
 </script>
 
 <style>
@@ -113,6 +128,7 @@ export default {};
   box-shadow: none none;
   font-family: "OpenSans";
   border-width: 0px;
+  width: 220px;
 }
 
 .formulario {

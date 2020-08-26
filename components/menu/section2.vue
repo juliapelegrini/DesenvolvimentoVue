@@ -5,67 +5,29 @@
         <div class="row">
           <div class="cartao col-xl-12 col-12">
             <h5 class="titulo_s2">Algumas funcionalidades</h5>
-
-            <div class="row itens">
-
-              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
-                <img
-                  src="../../assets/computer.svg"
-                  alt="Imagem de um Computador e telefone"
-                />
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
-                <p class="tit_s2 col-xl-12 col-12">
-                  Customizada e responsiva
-                </p>
-                <p class="subtit_s2 col-12">
-                  Personalizamos o layout de acordo com sua identidade visual,
-                  acessível pelo computador ou celular
-                </p>
-              </div>
-
-            <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
-                <img src="../../assets/pay.svg" alt="Cartões" />
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
-                <p class="tit_s2 col-xl-12 col-12">
-                  Meio de pagamento
-                </p>
-                <p class="subtit_s2 col-12">
-                  Checkout transparente via Cielo, Redecard, Mercado Pago, Stone
-                  ou Itaú Shopline
-                </p>
-              </div>
-            </div>
-
-            <div class="row itens">
-
-              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
-                <img src="../../assets/ssl.svg" alt="Cadeado" />
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
-                <p class="tit_s2 col-xl-12 col-12">
-                  Segurança e desempenho
-                </p>
-                <p class="subtit_s2 col-12">
-                  Certificado SSL com proteção de dados e hospedados
-                  em servidores nacionais garantindo que esteja sempre online
-                </p>
-              </div>
-
-              <div class="img_s2 ml-5 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
-                <img src="../../assets/delivery-truck.svg" alt="Caminhão" />
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12">
-                <p class="tit_s2 col-xl-12 col-12">Formas de entrega</p>
-                <p class="subtit_s2 col-12">
-                  Entrega local, Correios (PAC ou Sedex e Melhor envio (correios
-                  e transportadoras
-                </p>
+            <div class="row">
+              <div
+                class="col-xl-6 col-lg-6 col-md-6"
+                v-for="item in itens"
+                :key="item.id"
+              >
+                <div class="row items">
+                  <div class="col-xl-1"></div>
+                  <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
+                    <img
+                      :src="item.image1"
+                      :title="item.name"
+                      :alt="item.name"
+                    />
+                  </div>
+                  <div class="tit_s2 col-xl-6 col-lg-6 col-md-3 col-sm-3 col-3">
+                    {{ item.name }}
+                    <div
+                      class="subtit_s2"
+                      v-html="item.text1"
+                    ></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -76,7 +38,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      itens: []
+    };
+  },
+  async fetch() {
+    this.itens = await this.$axios
+      .$get(
+        "https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms/?category_code=5"
+      )
+      .then(res => {
+        return res.data;
+      });
+  }
+};
 </script>
 
 <style>
@@ -92,7 +69,6 @@ export default {};
   width: 100%;
   height: auto;
   background-color: white;
-
 }
 @media screen and (min-width: 600px) {
   .section2 {
@@ -101,7 +77,7 @@ export default {};
     height: 100%;
     background: #f5f5f5 0% 0% no-repeat padding-box;
     opacity: 1;
-    padding-bottom:60px;
+    padding-bottom: 60px;
   }
   .cartao_s2 {
     position: relative;
@@ -131,7 +107,8 @@ export default {};
 .tit_s2 {
   color: #161616;
   font-family: "Raleway-Medium";
-  font-size: 20px;
+  font-size: 18px;
+  margin-left: 10px;
 }
 
 .subtit_s2 {
@@ -139,5 +116,6 @@ export default {};
   font-size: 14px;
   font-family: "OpenSans";
   margin-bottom: 50px;
+  margin-right: 10px;
 }
 </style>

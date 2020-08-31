@@ -1,82 +1,76 @@
 <template>
-<div>
-  <div class="section1" id="sectionvenda">
-    <div class="container">
-      <div class="row col-xl-12">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <p class="texto1_s1" >{{banner.name1}}</p>
-          <!--<p>não pare o seu negócio</p>-->
-          <p class="texto2_s1"> {{banner.name2}}</p>
-          <div v-html="banner.text1" class="texto3_s1"> {{banner.text1}} </div>
-          <div class="botao1"> {{banner.name4}}</div>
-          <!--<p class="texto2_s1">
-            VENDA 24H
-            COM SUA 
-            LOJA VIRTUAL
-          </p>
-          <p class="texto3_s1">
-            Mais que uma plataforma de loja virtual, uma equipe ao seu lado lhe
-            ajudando a construir seu sonho.
-          </p>
-          <button class="botao1">VEJA NOSSOS PLANOS</button>-->
-        </div>
-        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
-        <!--form-->
-        <div class="formulario col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-          <form action="/action_page.php ">
-            <h1 class="titform">
-              Teste por 30 dias grátis, <br />
-              solicite um atendimento.
-            </h1>
-            <label for="1"></label><br />
-            <input
-              type="text"
-              id="1"
-              class="form-control col-xl-10"
-              placeholder="Nome"
-            />
-            <label for="2"></label><br />
-            <input
-              type="text"
-              id="2"
-              class="form-control col-xl-10"
-              placeholder="Telefone com DDD"
-            />
-            <label for="3"></label><br />
-            <input
-              type="text"
-              id="3"
-              class="form-control col-xl-10"
-              placeholder="E-mail"
-            />
-            <label for="4"></label><br />
-            <input
-              type="text"
-              id="4"
-              class="form-control col-xl-10"
-              placeholder="Nome de sua empresa"
-            />
-            <br />
-            <input type="submit" class="botao2" value="Me liguem" />
-          </form>
+  <div>
+    <div class="section1" id="sectionvenda">
+      <div class="container">
+        <div class="row col-xl-12">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <p class="texto1_s1">{{ banner.name1 }}</p>
+
+            <p class="texto2_s1">{{ banner.name2 }}</p>
+            <div v-html="banner.text1" class="texto3_s1">
+              {{ banner.text1 }}
+            </div>
+            <div class="botao1">{{ banner.name4 }}</div>
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
+          <!--form-->
+          <div class="formulario col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+            <form action="/action_page.php ">
+              <h1 class="titform">
+                Teste por 30 dias grátis, <br />
+                solicite um atendimento.
+              </h1>
+              <label for="1"></label><br />
+              <input
+                type="text"
+                id="1"
+                class="form-control col-xl-10"
+                placeholder="Nome"
+              />
+              <label for="2"></label><br />
+              <input
+                type="text"
+                id="2"
+                class="form-control col-xl-10"
+                placeholder="Telefone com DDD"
+              />
+              <label for="3"></label><br />
+              <input
+                type="text"
+                id="3"
+                class="form-control col-xl-10"
+                placeholder="E-mail"
+              />
+              <label for="4"></label><br />
+              <input
+                type="text"
+                id="4"
+                class="form-control col-xl-10"
+                placeholder="Nome de sua empresa"
+              />
+              <br />
+              <input type="submit" class="botao2" value="Me liguem" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
 export default {
-  data(){
-    return{
+  data() {
+    return {
       banner: []
-    }
+    };
   },
   async fetch() {
-    this.banner = await this.$axios.$get('https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms?page_id=7').then((res) =>{
-      return res.data
-    });
+    this.banner = await this.$axios
+      .$get("https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms?page_id=7")
+      .then(res => {
+        return res.data;
+      });
   }
 };
 </script>
@@ -170,7 +164,7 @@ export default {
 
 @media screen and (max-width: 375px) {
   .texto2_s1 {
-  font-size: 45px;
+    font-size: 45px;
   }
 }
 </style>

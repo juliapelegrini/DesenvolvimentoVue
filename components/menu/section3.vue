@@ -6,42 +6,19 @@
           <h1 class="tit_s3 mt-5 mb-2">
             Social Ads
           </h1>
-          <div class="text_s3" v-html="social.text1"></div>
-
+          <div class="text_s3" v-html="sociais.text1"></div>
           <div class=" offset-2">
             <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                <div v-for="social in social.category1.list" :key="social.id">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                    <img
-                      :src="social.image1"
-                      :title="social.name"
-                      :alt="social.name"
-                    />
-                  </div>
-                  <div>{{social.name}}</div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+                v-for="data in sociais.category1.list"
+                :key="data.id"
+              >
+                <div>
+                  <img :src="data.image1" :title="data.name" :alt="data.name" />
                 </div>
-                <!-- <p class="subtit_s3 mt-4">Google</p>
-                  <p class="p_s3">
-                    Analise e anúncie nas poderosas ferramentas Google
-                    Analytics, Google Shopping e Google Ads
-                  </p>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                  <img src="../../assets/icon(1).svg" alt="" />
-                  <p class="subtit_s3 mt-4">Facebook</p>
-                  <p class="p_s3">
-                    Utilize o pixel do Facebook na sua loja virtual para fazer
-                    anúncios assertivos e de remarketing
-                  </p>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                  <img src="../../assets/icon(2).svg" alt="" />
-                  <p class="subtit_s3 mt-4">Instagram</p>
-                  <p class="p_s3">
-                    Integramos seus produtos da loja com a sacolinha do
-                    Instagram para aumentar sua conversão dentro da rede social
-                  </p>-->
+                <div class="subtit_s3">{{ data.name }}</div>
+                <div class="p_s3" v-html="data.text1"></div>
               </div>
             </div>
           </div>
@@ -55,11 +32,12 @@
 export default {
   data() {
     return {
-      social: []
+      sociais: []
     };
   },
+
   async fetch() {
-    this.social = await this.$axios
+    this.sociais = await this.$axios
       .$get(
         "https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms?page_id=9&categories_content=true"
       )
@@ -98,6 +76,8 @@ export default {
   font-size: large;
   font-family: "Raleway-Medium";
   font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .p_s3 {

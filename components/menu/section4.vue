@@ -1,52 +1,25 @@
 <template>
-  <div class="section4 col-12" id="quem">
+  <div class="section4" id="quem">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-12 col-12">
-          <h1 class="tit_s4 mt-5 mb-2 col-12">
-            Para quem é o WD Shop
-          </h1>
-          <p class="text_s4 col-12">
-            Principalmente para quem não tem conhecimento ou tempo para
-            perder em aprender a customizar sua loja, ler <br />
-            tutoriais, testar, quebrar a cabeça com algo que não domina.
-            Você deve usar este tempo para focar no seu <br />
-            negócio, a parte técnica, deixa para nós.
-          </p>
-        </div>
+      <div class="tit_s4 mt-5 mb-2">
+        Para quem é o WD Shop
       </div>
-    </div>
-    <div class="container">
+      <div class="text_s4" v-html="quem.text1"></div>
       <div class="row">
-        <div class="car col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="img_card" src="../../assets/clothes.png" alt="roupas" />
+        <div
+          class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+          v-for="para in quem.category1.list"
+          :key="para.id"
+        >
+          <img
+            :src="para.image1"
+            :title="para.name"
+            :alt="para.name"
+            class="img_card"
+          />
           <div class="box_s4">
-            <p class="tit2_s4">Lojistas</p>
-            <p class="text2_s4">
-              Tem loja física e quer vender online podendo integrar com
-              seu sistema
-            </p>
-          </div>
-        </div>
-
-        <div class="car col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="img_card" src="../../assets/homem.png" alt="roupas" />
-          <div class="box_s4">
-            <p class="tit2_s4">Representantes</p>
-            <p class="text2_s4">
-              Precisa agilizar seu atendimento aos lojistas com venda B2B
-            </p>
-          </div>
-        </div>
-
-        <div class="car col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="img_card" src="../../assets/mulher.png" alt="roupas" />
-          <div class="box_s4">
-            <p class="tit2_s4">Autônomos</p>
-            <p class="text2_s4">
-              Vende pelas redes sociais e quer se profissionalizar escalando
-              suas vendas
-            </p>
+            <div class="tit2_s4">{{ para.name }}</div>
+            <div class="text2_s4" v-html="para.text1"></div>
           </div>
         </div>
       </div>
@@ -55,7 +28,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      quem: []
+    };
+  },
+
+  async fetch() {
+    this.quem = await this.$axios
+      .$get(
+        "https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms?page_id=10&categories_content=true"
+      )
+      .then(res => {
+        return res.data;
+      });
+  }
+};
 </script>
 
 <style>
@@ -76,7 +65,7 @@ export default {};
   font-size: 40px;
   font-family: "Raleway-Bold";
   text-align: center;
-  padding-top: 10px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 .text_s4 {
@@ -84,12 +73,13 @@ export default {};
   color: #ffffff;
   font-family: "OpenSans-SemiBold";
   font-size: 14px;
+  padding-bottom: 40px;
 }
 
 .box_s4 {
   background-color: #ffffff;
   top: 20px;
-  margin-top: 75px;
+  margin-top: 50px;
   padding-top: 90px;
   padding-right: 68px;
   padding-left: 68px;
@@ -101,7 +91,6 @@ export default {};
 }
 
 .img_card {
-  margin-top: 20px;
   height: 150px;
   width: 150px;
   align-content: center;
@@ -123,11 +112,11 @@ export default {};
 }
 
 @media screen and (max-width: 800px) {
-  .car{
+  .car {
     width: 100px;
   }
   .img_card {
-    margin-top: 40px;
+    margin-top: 20px;
     position: absolute;
     z-index: 2;
     display: flex;
@@ -136,15 +125,17 @@ export default {};
     margin-left: 20%;
   }
   .tit2_s4 {
-  font-size: 18px;
-  align-content: center;
-
+    font-size: 18px;
+    align-content: center;
   }
   .text2_s4 {
-  font-size: 13px;}
-}
-.box_s4 {
-  padding-right: 55px;
-  padding-left: 55px;
+    font-size: 13px;
+  }
+  .box_s4 {
+    padding-right: 55px;
+    padding-left: 55px;
+    height: 280px;
+    margin-bottom: 20px;
+  }
 }
 </style>

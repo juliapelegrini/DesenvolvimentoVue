@@ -4,14 +4,15 @@
       <slick class="row" :is="slickComp" ref="slick" :options="slickOptions">
         <div
           class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"
-          v-for="cliente in depo"
+          v-for="cliente in depo.category1.list"
+          :key="cliente.id"
         >
           <div class="cards_s6 col-xl-12">
-            <p class="text_s6">
-              {{ cliente.texto }}
-            </p>
-            <p class="text2_s6">{{ cliente.nome }}</p>
-            <p class="text3_s6">{{ cliente.empresa }}</p>
+            <div class="text_s6">
+              {{cliente.texto}}
+            </div>
+            <div class="text2_s6">{{ cliente.nome }}</div>
+            <div class="text3_s6">{{ cliente.empresa }}</div>
             <img class="img_s6" :src="cliente.imagem" alt="cliente 3" />
           </div>
         </div>
@@ -22,53 +23,48 @@
 
 <script>
 export default {
-  props: ["depo"],
+  props:["depo"], 
   components: {
-    Slick: () => import("vue-slick")
+    Slick: () => import('vue-slick')
   },
-  data() {
-    return {
-      slickComp: "",
-      slickOptions: {
-        arrows: true,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        mobileFirst: true,
-        responsive: [
-          {
-            breakpoint: 993,
-            settings: "unslick"
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerPadding: "40px",
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerPadding: "40px",
-              slidesToShow: 2
-            }
-          }
-        ]
-      }
-    };
+  data(){
+    return{
+        slickComp: '',
+        slickOptions:{
+            arrows:true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: false,
+            slidesToShow:3,
+            slidesToScroll:1,
+            mobileFirst:true,
+             responsive: [               
+                {
+                breakpoint: 768,
+                settings: 
+                    "unslick"
+                    
+                
+                },
+                {
+                breakpoint: 320,
+                settings: {
+                    infinite:true,
+                    arrows: false,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }
+            ]
+        }
+    }
   },
-
   mounted() {
-    this.$nextTick(function() {
-      this.slickComp = "Slick";
-    });
-  }
+        this.$nextTick(function () {
+           this.slickComp = 'Slick'
+        })
+    },
 };
 </script>
 

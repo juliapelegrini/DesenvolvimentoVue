@@ -1,23 +1,12 @@
 <template>
   <div class="section6">
-    <p class="tit_s6 col-xl-12">{{ titulo }}</p>
+    <div class="tit_s6 col-xl-12">{{confiam.name}}</div>
     <div class="container">
-        <p class="subtit_s6 col-xl-12">
-          {{ descricao }}
-        </p>
+      <div class="row">
+        <div class="subtit_s6 col-xl-12" v-html="confiam.text1"></div>
       </div>
-      <!--<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" v-for="cliente in lista">
-            <div class="cards_s6 col-xl-12">
-              <p class="text_s6">
-                {{cliente.texto}}
-              </p>
-              <p class="text2_s6">{{cliente.nome}}</p>
-              <p class="text3_s6">{{cliente.empresa}}</p>
-            </div>
-            <img class="img_s6" :src="cliente.imagem" alt="cliente 3" />
-          </div>
-          </div>-->
-      <carrossel :depo="lista" />
+      </div>
+      <carrossel :depo="confiam" />
   </div>
 </template>
 
@@ -27,35 +16,20 @@ export default {
   components: {
     carrossel
   },
-  data: function() {
+data() {
     return {
-      titulo: "Confiam na WD House",
-      descricao:
-        "São mais de 450 projetos entregues ao longo dos 14 anos. Possuímos mais de 280 contratos ativos e já são + de 20 lojas entregues nas últimas semanas, uma mídia de 1 loja virtual por dia.",
-      lista: [
-        {
-          texto:
-            "Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis  commodo.",
-          nome: "Michael Nicholas",
-          empresa: "Nome da empresa",
-          imagem: "../../assets/bg2.png"
-        },
-        {
-          texto:
-            "Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis commodo.",
-          nome: "Michael Nicholas",
-          empresa: "Nome da empresa",
-          imagem: "../../assets/bg2.png"
-        },
-        {
-          texto:
-            "Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit. Suspendisse et justo Praesent mattis commodo.",
-          nome: "Michael Nicholas",
-          empresa: "Nome da empresa",
-          imagem: "../../assets/bg2.png"
-        }
-      ]
+      confiam: []
     };
+  },
+
+  async fetch() {
+    this.confiam = await this.$axios
+      .$get(
+        "https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms/?page_id=12&categories_content=true"
+      )
+      .then(res => {
+        return res.data;
+      });
   }
 };
 </script>

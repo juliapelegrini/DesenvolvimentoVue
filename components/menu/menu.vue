@@ -15,13 +15,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item :href="item.href" v-for="item in menu" >{{item.name}}</b-nav-item>
-            <!--<b-nav-item href="#sectionvenda" id="text_menu">Home</b-nav-item>
-            <b-nav-item href="#func" id="text_menu">Funcionalidades</b-nav-item>
-            <b-nav-item href="#quem" id="text_menu">Para quem?</b-nav-item>
-            <b-nav-item href="#section5" id="text_menu">Diferencial</b-nav-item>
-            <b-nav-item href="#planos" id="text_menu">Planos</b-nav-item>
-            <b-nav-item href="#contato" id="text_menu">Contato</b-nav-item>-->
+            <b-nav-item :href="item.href" v-for="item in menu" :key="menu.id">{{item.name}}</b-nav-item>
             <b-nav-item href="#" id="img_menu">
               <img
                 src="../../assets/facebook-square (2).svg"

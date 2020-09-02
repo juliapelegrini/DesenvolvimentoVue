@@ -1,12 +1,12 @@
 <template>
   <div class="section6">
-    <div class="tit_s6 col-xl-12">{{confiam.name}}</div>
+    <div class="tit_s6 col-xl-12">Confiam na WD Shop</div>
     <div class="container">
       <div class="row">
         <div class="subtit_s6 col-xl-12" v-html="confiam.text1"></div>
       </div>
-      </div>
-      <carrossel :depo="confiam" />
+    </div>
+    <carrossel :depo="confiam.category1.list" />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   components: {
     carrossel
   },
-data() {
+  data() {
     return {
       confiam: []
     };
@@ -28,6 +28,7 @@ data() {
         "https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms/?page_id=12&categories_content=true"
       )
       .then(res => {
+        console.log(res.data.category1.list);
         return res.data;
       });
   }
@@ -74,8 +75,10 @@ data() {
   font-size: 14px;
   font-family: "OpenSans";
   background-color: #ffffff;
-  text-align: center;
-  padding-top: 30px;
+  text-align: start;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-left: 50px;
   margin-top: 20px;
   z-index: 3;
 }
@@ -84,22 +87,23 @@ data() {
   color: #101010;
   font-size: 18px;
   background-color: #ffffff;
-  text-align: center;
+  text-align: start;
   margin-top: -17px;
   padding-top: 10px;
   font-family: "Roboto-Regular";
+  padding-left: 50px;
   z-index: 2;
 }
 
 .text3_s6 {
   color: #727272;
   font-size: smaller;
-
-  text-align: center;
-  margin-top: -17px;
+  text-align: start;
+  margin-top: 0px;
   font-family: "OpenSans";
   font-size: 14px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  padding-left: 50px;
   z-index: 1;
 }
 
@@ -109,6 +113,8 @@ data() {
   margin-right: auto;
   border: 6px solid #a6ce39;
   border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 120px;
 }
 
 .row_s6 {

@@ -4,17 +4,17 @@
       <slick class="row" :is="slickComp" ref="slick" :options="slickOptions">
         <div
           class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"
-          v-for="cliente in depo.category1.list"
+          v-for="cliente in depo"
           :key="cliente.id"
         >
           <div class="cards_s6 col-xl-12">
-            <div class="text_s6">
-              {{cliente.texto}}
+            <div class="text_s6" v-html="cliente.text1">
             </div>
-            <div class="text2_s6">{{ cliente.nome }}</div>
-            <div class="text3_s6">{{ cliente.empresa }}</div>
-            <img class="img_s6" :src="cliente.imagem" alt="cliente 3" />
-          </div>
+            <div class="text2_s6">{{ cliente.name1}}</div>
+            <div class="text3_s6">{{ cliente.name2 }}</div>
+            </div>
+            <img class="img_s6" :src="cliente.image1" alt="cliente 3" />
+          
         </div>
       </slick>
     </div>

@@ -2,31 +2,43 @@
   <div class="section9">
     <div class="container-luid">
       <div class="row">
-        <img class="col-xl-6" src="../../assets/gabriela.png" alt="" />
+        <img
+          :src="digitais.image1"
+          :title="digitais.name"
+          :alt="digitais.name"
+          class="col-xl-6"
+        />
         <div class="col-xl-6">
           <p class="tit_s9">&lt;somos digitais/&gt;</p>
-          <p class="text1_s9">Experiência web</p>
-          <p class="text2_s9">+ de 450 sites, apps e sistemas em 14 anos</p>
-          <p class="text1_s9">Atendemos todo o Brasil</p>
-          <p class="text2_s9">
-            Possuímos clientes em +10 estados brasileiros do MEI ao de
-            grande porte
-          </p>
-          <p class="text1_s9">Geramos valor</p>
-          <p class="text2_s9">
-            Promovemos a inserção digital através de nossas
-            redes sociais, eventos e cursos.
-          </p>
-            <div class="" id="contato"> </div>
+          <div v-for="somos in digitais.category1.list" :key="somos.id">
+            <div class="text1_s9">{{ somos.name }}</div>
+            <div class="text2_s9" v-html="somos.text1"></div>
+            <div class="" id="contato"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      digitais: []
+    };
+  },
+
+  async fetch() {
+    this.digitais = await this.$axios
+      .$get(
+        "https://wdshop-j.dev.wdhouse.com.br/wdframe/api/v1/cms?page_id=15&categories_content=true"
+      )
+      .then(res => {
+        return res.data;
+      });
+  }
+};
 </script>
 
 <style>
@@ -41,7 +53,6 @@ export default {};
   font-size: 40px;
   margin-top: 40px;
   margin-left: 10px;
-
 }
 
 .text1_s9 {
@@ -49,16 +60,14 @@ export default {};
   font-size: 20px;
   font-family: "Raleway-Regular";
   margin-left: 10px;
-
 }
 
 .text2_s9 {
   color: #727272;
   font-family: "OpenSans";
   font-size: 14px;
-  margin-top: -15px;
+  margin-top: -5px;
   margin-bottom: 35px;
   margin-left: 10px;
-
 }
 </style>

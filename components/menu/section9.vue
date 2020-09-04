@@ -44,7 +44,6 @@ export default {
 <style>
 .section9 {
   background-color: #f5f5f5;
-  width: 90%;
 }
 
 .tit_s9 {

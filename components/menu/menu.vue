@@ -15,7 +15,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item :href="item.href" v-for="item in menu" :key="menu.id">{{item.name}}</b-nav-item>
+            <b-nav-item :href="item.href" v-for="item in menu" :key="item.id">{{item.name}}</b-nav-item>
             <b-nav-item href="#" id="img_menu">
               <img
                 src="../../assets/facebook-square (2).svg"

@@ -5,24 +5,28 @@
         <div class="row">
           <div class="cartao col-xl-12 col-12">
             <h5 class="titulo_s2">Algumas funcionalidades</h5>
-            <div class="row">
-              <div
-                class="col-xl-6 col-lg-6 col-md-6 col-sm-6"
-                v-for="item in itens"
-                :key="item.id"
-              >
-                <div class="row items">
-                  <div class="col-xl-1 col-lg-1 col-md-6 col-sm-0 col-0"></div>
-                  <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
-                    <img
-                      :src="item.image1"
-                      :title="item.name"
-                      :alt="item.name"
-                    />
-                  </div>
-                  <div class="tit_s2 col-xl">
-                    <div v-html="item.name"></div>
-                    <div class="subtit_s2" v-html="item.text1"></div>
+            <div class="subir">
+              <div class="row">
+                <div
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-6"
+                  v-for="item in itens"
+                  :key="item.id"
+                >
+                  <div class="row items">
+                    <div
+                      class="col-xl-1 col-lg-1 col-md-6 col-sm-0 col-0"
+                    ></div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
+                      <img
+                        :src="item.image1"
+                        :title="item.name"
+                        :alt="item.name"
+                      />
+                    </div>
+                    <div class="tit_s2 col-xl">
+                      <div v-html="item.name"></div>
+                      <div class="subtit_s2" v-html="item.text1"></div>
+                    </div>
                   </div>
                 </div>
               </div>

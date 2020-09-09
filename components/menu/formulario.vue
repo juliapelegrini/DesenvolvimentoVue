@@ -84,12 +84,12 @@
             v-model="empresa"
             :class="classes"
           />
-          <small v-show="errors[0]">{{ errors[0] }}</small>
+         <small v-show="errors[0]">{{ errors[0] }}</small>
         </ValidationProvider>
         <br />
-        <recaptcha @error="recaptcha.error()" />
+        <!--<recaptcha @error="recaptcha.error()" />-->
         <FormMessage :msg="msg_form" :type="msg_form_type"></FormMessage>
-        <input type="submit" class="botao2" value="Me liguem" /> {{bannerTexto.name4}}
+        <input type="submit" class="botao2" :value="bannerTexto.name5" /> 
       </form>
     </ValidationObserver>
   </div>

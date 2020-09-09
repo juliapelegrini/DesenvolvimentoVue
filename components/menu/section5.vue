@@ -55,8 +55,7 @@ export default {
 .text_s5 {
   padding-top: 15px;
   font-family: "OpenSans";
-  color: #161616;
-  opacity: 60%;
+  color: #16161696;
   font-size: 14px;
 }
 

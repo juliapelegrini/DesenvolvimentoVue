@@ -107,7 +107,7 @@ export default {
 
 .text2_s4 {
   font-size: 16px;
-  opacity: 80%;
+  color: #727272;
   font-family: "OpenSans";
 }
 

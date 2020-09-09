@@ -15,42 +15,7 @@
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
           <!--form-->
           <div class="formulario col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-            <form action="/action_page.php ">
-              <h1 class="titform">
-                Teste por 30 dias grátis, <br />
-                solicite um atendimento.
-              </h1>
-              <label for="1"></label><br />
-              <input
-                type="text"
-                id="1"
-                class="form-control col-xl-10"
-                placeholder="Nome"
-              />
-              <label for="2"></label><br />
-              <input
-                type="text"
-                id="2"
-                class="form-control col-xl-10"
-                placeholder="Telefone com DDD"
-              />
-              <label for="3"></label><br />
-              <input
-                type="text"
-                id="3"
-                class="form-control col-xl-10"
-                placeholder="E-mail"
-              />
-              <label for="4"></label><br />
-              <input
-                type="text"
-                id="4"
-                class="form-control col-xl-10"
-                placeholder="Nome de sua empresa"
-              />
-              <br />
-              <input type="submit" class="botao2" value="Me liguem" />
-            </form>
+            <formulario :bannerTexto="banner"/>
           </div>
         </div>
       </div>
@@ -59,11 +24,15 @@
 </template>
 
 <script>
+import formulario from "~/components/menu/formulario.vue";
 export default {
   data() {
     return {
       banner: []
     };
+  },
+  components: {
+    formulario
   },
   async fetch() {
     this.banner = await this.$axios
@@ -132,35 +101,7 @@ export default {
   margin-left: 15px;
   background-color: #f5f5f5;
 }
-.titform {
-  font-size: 25px;
-  text-align: center;
-  padding-top: 35px;
-  font-family: "Roboto-Regular";
-}
 
-.form-control {
-  color: #c8c8c8;
-  font-size: 14px;
-  font-family: "Roboto-Italic";
-  padding: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.botao2 {
-  background-color: #a6ce39;
-  box-shadow: #fffffd;
-  color: #ffffff;
-  padding: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 5px;
-  font-family: "Roboto-Bold";
-  border-width: 0px;
-  margin-left: 35px;
-}
 
 @media screen and (max-width: 375px) {
   .texto2_s1 {

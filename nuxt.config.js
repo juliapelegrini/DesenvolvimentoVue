@@ -34,7 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    
+    {src: `~/plugins/vee-validate.js`, ssr: true},
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,15 +47,26 @@ export default {
   modules: [
     '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
+    ['@nuxtjs/recaptcha', {
+      hideBadge: true, // Hide badge element (v3 & v2 via size=invisible)
+      language: 'pt-BR',   // Recaptcha language (v2)
+      siteKey: '6LcARJMUAAAAANbslRgF6RMq4cYH1YAgJnQ922jK',    // Site key for requests
+      version: 2,     // Version
+      size: 'invisible'        // Size: 'compact', 'normal', 'invisible' (v2)
+    }]
   ],
   /*
   ** Build configuration
   */
   build: {
+    transpile: [
+      "vee-validate",
+      'vue-slick',
+    ]
         /*
     ** You can extend webpack config here
     */
-   extend(config, ctx) {
+   /*extend(config, ctx) {
     const nodeExternals = require('webpack-node-externals')
     if (ctx.isServer) {
         config.externals = [
@@ -64,7 +75,7 @@ export default {
           })
         ]
       }
-    }
+    }*/
 
   },
   router: {

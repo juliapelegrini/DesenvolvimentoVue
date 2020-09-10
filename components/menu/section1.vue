@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="section1" id="sectionvenda">
+    <div class="section1" id="sectionvenda" >
       <div class="container">
         <div class="row col-xl-12">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -10,12 +10,12 @@
             <div v-html="banner.text1" class="texto3_s1">
               {{ banner.text1 }}
             </div>
-            <div class="botao1">{{ banner.name4 }}</div>
+            <div class="botao1" data-aos="fade-up">{{ banner.name4 }}</div>
           </div>
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
           <!--form-->
           <div class="formulario col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-            <formulario :bannerTexto="banner"/>
+            <formulario :bannerTexto="banner" />
           </div>
         </div>
       </div>
@@ -25,7 +25,13 @@
 
 <script>
 import formulario from "~/components/menu/formulario.vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default {
+  mounted() {
+    AOS.init();
+  },
   data() {
     return {
       banner: []
@@ -101,7 +107,6 @@ export default {
   margin-left: 15px;
   background-color: #f5f5f5;
 }
-
 
 @media screen and (max-width: 375px) {
   .texto2_s1 {

@@ -1,7 +1,7 @@
 <template>
   <div class="section2" id="func">
     <div class="container">
-      <div class="cartao_s2 col-xl-12">
+      <div class="cartao_s2 col-xl-12" data-aos="fade-down">
         <div class="row">
           <div class="cartao col-xl-12 col-12">
             <h5 class="titulo_s2">Algumas funcionalidades</h5>
@@ -39,7 +39,12 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
+  mounted() {
+    AOS.init();
+  },
   data() {
     return {
       itens: []
@@ -58,38 +63,20 @@ export default {
 </script>
 
 <style>
-.section2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: #f5f5f5 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
-.cartao_s2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-color: white;
-}
 @media screen and (min-width: 600px) {
   .section2 {
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: auto;
     background: #f5f5f5 0% 0% no-repeat padding-box;
     opacity: 1;
-    padding-bottom: 60px;
+    margin-bottom:40px;
   }
   .cartao_s2 {
-    position: relative;
-    margin-left: -75px;
-    width: 91%;
-    height: 100%;
-    transform: translate(90px, -30px);
+   margin-top: -50px;
     background-color: white;
-    -webkit-box-shadow: 0px 5px 32px 0px #a09f9f;
-    -moz-box-shadow: 0px 5px 32px 0px #a09f9f;
-    box-shadow: 0px 5px 32px 0px #a09f9f;
+    height:577px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.521);
+    padding-top: 40px;
   }
 }
 .titulo_s2 {

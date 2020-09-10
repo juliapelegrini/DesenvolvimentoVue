@@ -1,7 +1,7 @@
 <template>
   <div class="section8">
     <div class="tit_s8">Contrate também (opcional)</div>
-    <div class="text1_s8 col-9" v-html="contrate.text1"></div>
+    <div class="text1_s8 col-xl-12" v-html="contrate.text1"></div>
     <div class="container">
       <div class="row">
         <div
@@ -68,7 +68,7 @@ export default {
   opacity: 60%;
   margin-top: 20px;
   margin-bottom: 50px;
-  margin-left: 200px;
+
 }
 
 .text2_s8 {
@@ -102,5 +102,9 @@ export default {
 
 .divisao_s8 {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  
 }
 </style>

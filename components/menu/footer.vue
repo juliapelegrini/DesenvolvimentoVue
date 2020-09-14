@@ -17,19 +17,19 @@
         <div class="distanciamento col-xl-3 col-lg-2 col-md-2 col-sm-12 col-12">
           <div class="rodape">{{ parceiro.name }}</div>
           <div v-for="parc in parceiro.subitems" :key="parc.id">
-            <a href="parc.href" class="texto">{{ parc.name }}</a>
+            <a :href="parc.href" class="texto">{{ parc.name }}</a>
           </div>
         </div>
         <div class="distanciamento col-xl-3 col-lg-2 col-md-2 col-sm-12 col-12">
           <div class="rodape">{{ suporte.name }}</div>
           <div v-for="sup in suporte.subitems" :key="sup.id">
-            <a href="sup.href" class="texto">{{ sup.name }}</a>
+            <a :href="sup.href" class="texto">{{ sup.name }}</a>
           </div>
         </div>
         <div class="distanciamento col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
           <div class="rodape">{{ acompanhe.name }}</div>
           <div v-for="acomp in acompanhe.subitems" :key="acomp.id">
-            <a href="acomp.href" class="texto">{{ acomp.name }}</a>
+            <a :href="acomp.href" class="texto">{{ acomp.name }}</a>
           </div>
         </div>
       </div>

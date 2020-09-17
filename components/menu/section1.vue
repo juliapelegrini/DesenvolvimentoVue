@@ -34,7 +34,8 @@ export default {
   },
   data() {
     return {
-      banner: []
+      banner: [],
+      name1: 'Home Page WD Shop',
     };
   },
   components: {
